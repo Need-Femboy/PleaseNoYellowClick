@@ -21,7 +21,7 @@ import java.awt.event.KeyEvent;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Please no yellow click",
+	name = "Please No Yellow Click",
 	description = "Press a hotkey and click away to do something without worrying about yellow clicks",
 	tags = {"pvm", "skilling", "yellow"}
 )
