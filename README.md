@@ -1,2 +1,1 @@
-# Example
-An example greeter plugin
+It's like shift click walk but you don't walk
