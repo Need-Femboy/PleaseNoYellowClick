@@ -54,6 +54,7 @@ public class PleaseDoNotRunPlugin extends Plugin implements KeyListener
 	private boolean hotkeyMatch(KeyEvent e)
 	{
 		Keybind hotkey = config.hotkey();
+
 		if (hotkey == Keybind.NOT_SET)
 		{
 			return false;
@@ -61,7 +62,7 @@ public class PleaseDoNotRunPlugin extends Plugin implements KeyListener
 
 		Keybind ctrlHotkey = new Keybind(hotkey.getKeyCode(), hotkey.getModifiers() | InputEvent.CTRL_DOWN_MASK); //config.hotkey() but with ctrl modifier attached
 
-		return config.hotkey().matches(e) || ctrlHotkey.matches(e);
+		return hotkey.matches(e) || ctrlHotkey.matches(e);
 	}
 
 	@Override
